@@ -47,15 +47,11 @@ function decode(expr) {
   }
   arr = arr.split(' ');
 let dec = arr.reduce((string, obj) => {
-string += table[obj];
+string += MORSE_TABLE[obj];
 return string;
 }, '')
   return dec;
 }
 module.exports = {
   decode
-}
-
-module.exports = {
-    decode
 }
